@@ -25,8 +25,6 @@ var countBattleships = function(board) {
       
       board[i][j] = "."
       sink(board, i +1, j)
-      sink(board, i-1, j)
       sink(board, i, j +1)
-      sink(board, i, j-1)
       
   }
