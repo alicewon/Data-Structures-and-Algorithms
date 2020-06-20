@@ -49,3 +49,27 @@ var countBattleships = function(board) {
 //     if (j > 0 && board[i][j-1] === 'X') return true 
 //     return false 
 // } 
+
+
+class PhotoGroupContainer extends React.Component {
+  constructor() {
+    super()
+    state= { photos: [] }
+  }
+  
+
+  componentDidMount() {
+    fetchPhotos( photos => 
+      this.setState({ photos: photos}))
+  }
+  render() {
+    return <PhotoGroup photos={this.state.photos} />
+  }
+}
+
+const PhotoGroup = props =>
+  <div>
+    {props.photos.map( pic => (
+      <div>{pic.img}</div>
+    ))}
+  </div>
