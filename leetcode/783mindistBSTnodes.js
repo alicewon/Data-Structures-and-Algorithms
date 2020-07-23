@@ -52,3 +52,17 @@ while (q.length > 0) {
     ans.push(row / length)
 }
 return ans
+
+
+const minDiffInBST = (root) => {
+    let last = -Infinity, min = Infinity
+    const trav = node => {
+        if (min == 1 || !node) return
+        trav(node.left)
+        min = Math.min(min, node.val - last)
+        last = node.val
+        trav(node.right)
+    }
+    trav(root)
+    return min
+}
