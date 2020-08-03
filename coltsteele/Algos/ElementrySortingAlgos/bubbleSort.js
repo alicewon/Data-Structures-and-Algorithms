@@ -1,3 +1,9 @@
+// BUBBLE SORT
+// Great for Nearly Sorted arrays
+
+// PSEUDOCODE:
+
+
 function bubbleSort(arr) {
     for(let i = arr.length; i > 0; i--) {
         noSwaps = true

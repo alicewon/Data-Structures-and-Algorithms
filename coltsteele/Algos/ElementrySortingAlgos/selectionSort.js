@@ -3,11 +3,17 @@
 
 // Pseudocode
 
+// SELECTION SORT
+// Not great for Nearly Sorted arrays
+
+
+// PSEUDOCODE:
 // - store first element as smallest value yo've seen
 // - compare this item to the next item in the array until you find a smaller number
 // - if a smaller number is found, that is the new minimum, and continue to the end of the array
 // - if min is not the value (index) you started with, SWAP the two values
 // - repeat this with the NEXT element (after the one you started with)
+
 
 function selectionSort(arr) {
     for(let i = 0; i< arr.length; i++) {

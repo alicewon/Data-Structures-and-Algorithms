@@ -1,0 +1,21 @@
+ Data Structures
+
+What do they do?
+- Collections of values, the relationships among them, and the functions or operations that can be applied to the data.
+
+- All have different strengths, no best one, just a best one for the scenario
+
+- Need an ordered list with fast inserts/removals at the beginning and end? -> Linked List
+
+- Web scraping nested HTML? -> Tree
+
+- Need to write a scheduler? -> Binary Heap
+
+
+ES2015 Syntax:
+
+- JS is not object-oriented, but Classes syntax is used over it's existing prototype-based inheritance 
+
+- Data Structures are going to be implemented as classes
+
+
